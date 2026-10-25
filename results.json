@@ -1,0 +1,136 @@
+{
+ "_note": "All values are copied from the printed outputs of the authors' Colab runs (main notebook and colab_patch_standalone.ipynb).",
+ "fed_by_round": {
+  "source": "notebook cell 65 (evaluate_full, pooled validation set)",
+  "dice": {
+   "1": 0.8886,
+   "2": 0.927,
+   "3": 0.9447,
+   "4": 0.9511,
+   "5": 0.9548,
+   "6": 0.955,
+   "7": 0.9561,
+   "8": 0.9565,
+   "9": 0.9577,
+   "10": 0.9592,
+   "11": 0.9583,
+   "12": 0.9602,
+   "13": 0.9585,
+   "14": 0.9596,
+   "15": 0.96
+  },
+  "iou": {
+   "1": 0.7996,
+   "2": 0.8641,
+   "3": 0.8954,
+   "4": 0.9069,
+   "5": 0.9137,
+   "6": 0.9141,
+   "7": 0.9161,
+   "8": 0.9169,
+   "9": 0.9191,
+   "10": 0.9217,
+   "11": 0.9202,
+   "12": 0.9237,
+   "13": 0.9205,
+   "14": 0.9225,
+   "15": 0.9232
+  }
+ },
+ "primary_run_round15": {
+  "dice": 0.96,
+  "iou": 0.9232,
+  "source": "notebook cell 65"
+ },
+ "seeds": {
+  "source": "patch notebook cell 4 (evaluate_full, saved seed checkpoints, round 15)",
+  "dice": [
+   0.9587940170731343,
+   0.959445704037035,
+   0.9596331614843556
+  ],
+  "iou": [
+   0.9210658031450191,
+   0.9222706875330965,
+   0.9226487555973967
+  ],
+  "mean_dice": 0.9593,
+  "pop_sd_dice": 0.0004,
+  "sample_sd_dice": 0.0004,
+  "mean_iou": 0.922,
+  "pop_sd_iou": 0.0007,
+  "sample_sd_iou": 0.0008,
+  "sd_dice": 0.0004,
+  "sd_iou": 0.0007
+ },
+ "per_client_round15": {
+  "source": "patch notebook cell 3",
+  "montgomery_n28": {
+   "dice": 0.9633586832455227,
+   "iou": 0.9293660351208278
+  },
+  "shenzhen_n114": {
+   "dice": 0.9591911529239855,
+   "iou": 0.9218637368135285
+  }
+ },
+ "xai_rounds": [
+  3,
+  5,
+  10,
+  15
+ ],
+ "attention_in_mask": {
+  "source": "notebook cell 48",
+  "values": [
+   0.3037,
+   0.3039,
+   0.2675,
+   0.2782
+  ]
+ },
+ "gradcam_dec2_in_mask": {
+  "source": "patch notebook cell 2 (Grad-CAM weighting)",
+  "values": [
+   0.6761564016342163,
+   0.6595147848129272,
+   0.6735813617706299,
+   0.6744953393936157
+  ]
+ },
+ "gradcam_dec4_in_mask": {
+  "source": "patch notebook cell 2 (Grad-CAM weighting)",
+  "values": [
+   0.8063005208969116,
+   0.798453688621521,
+   0.7924498915672302,
+   0.7947834730148315
+  ]
+ },
+ "gradcampp_mask_guided": {
+  "source": "patch notebook cell 2 (pytorch-grad-cam GradCAMPlusPlus, target = sigmoid output summed inside the ground-truth mask)",
+  "dec2": [
+   0.7649545073509216,
+   0.7412387728691101,
+   0.742733895778656,
+   0.7566460371017456
+  ],
+  "dec4": [
+   0.9610892534255981,
+   0.9795525670051575,
+   0.9827377796173096,
+   0.9825097918510437
+  ]
+ },
+ "lung_area_fraction_chance_level": 0.2516,
+ "bootstrap_central_minus_fed_per_image_dice": {
+  "mean": 0.0005707765968752579,
+  "ci95": [
+   -0.0011025281229489286,
+   0.0022086767558480644
+  ],
+  "fed_per_image": 0.9596,
+  "central_per_image": 0.9602,
+  "resamples": 10000
+ }
+}

@@ -1,0 +1,10 @@
+torch
+torchvision
+flwr[simulation]
+segmentation-models-pytorch
+albumentations
+opencv-python
+grad-cam
+matplotlib
+numpy
+pandas
